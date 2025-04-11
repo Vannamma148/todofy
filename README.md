@@ -1,7 +1,3 @@
-# todofy
-A responsive Todo List app built with HTML, CSS, and JavaScript.
-
-
 # 📝 To-Do List Web App
 
 A beautiful and responsive **To-Do List** application built using **HTML, CSS, and JavaScript**. This project features a modern UI with a custom animated cursor, allowing users to add and manage tasks easily. It's fully responsive and has a minimal aesthetic.
