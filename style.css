@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Monoton&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-position: center center; */
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: white;
+}
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 1.6rem;
+}
+
+.dot {
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(1, 236, 236, 0.68);
+    border-radius: 50%;
+    transition: all 0.4s;
+    /* border: 3px solid white; */
+    z-index: 4;
+    pointer-events: none;
+}
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center ;
+}
+.child {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid white;
+    border-radius: 22px;
+    background-color: rgba(59, 58, 59, 0.459);
+    backdrop-filter: blur(2px);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+button {
+    padding: 14px;
+    background-color: rgba(47, 193, 176, 0.055);
+    backdrop-filter: blur(5px);
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    font-size: 15px;
+    border: none;
+    margin-inline: 10px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: rgba(47, 193, 176, 1);
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+
+input[type="text"] {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #1b1a1a80;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+    height: 46px;
+    box-shadow: none;
+    outline: none;
+    width: 84%;
+}
+
+input[type="text"]:focus {
+    border-color: rgba(47, 193, 176, 1);
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.itemcontainer {
+    width: 90%;
+    padding: 10px;
+    gap: 10px;
+    margin: 10px;
+    overflow-y: auto;
+overflow-x: hidden;
+    scrollbar-width: none;
+    border-radius: 18px;
+}
+/* Chrome/Edge scroll hiding */
+.itemcontainer::-webkit-scrollbar {
+    display: none;
+  }
+li {
+    /* text-align: center; */
+    font-size: 18px;
+    /* margin: 10px; */
+    display: flex;
+    /* border: 1px solid white; */
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 18px;
+    /* ADD THESE */
+    flex-wrap: wrap;
+    /* allow flex children to wrap */
+    word-break: break-word;
+    /* break long words */
+    white-space: normal;
+    /* allow text to wrap */
+    max-width: 100%;
+    /* restrict width if needed */
+    padding:0.6rem;
+    
+  
+}
+ul.itemcontainer {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 1rem;
+  }
+  
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* make it span full width */
+    background-color: rgba(0, 0, 0, 0.5); /* optional background */
+    padding: 10px 0;
+    color: white;
+    text-align: center; /* center text directly */
+}
+.fa-trash{
+    cursor: pointer;
+}
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+    .child {
+      width: 90%;
+      padding: 1rem;
+      min-height: 300px;
+      gap: 20px;
+      
+    }
+  
+    input[type="text"] {
+      width: 100%;
+      font-size: 15px;
+    }
+  
+    button {
+      width: 100%;
+      margin: 0.5rem 0;
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .itemcontainer {
+      width: 100%;
+      max-height: 200px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+  
+
+  

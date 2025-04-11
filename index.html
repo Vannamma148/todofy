@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <!-- SEO Meta Tags -->
+  <meta name="description" content="A stylish, responsive Todo List app built with HTML, CSS, and JavaScript. Add, delete, and manage your tasks with ease.">
+  <meta name="keywords" content="todo list, javascript project, task manager, web app, responsive, custom cursor, front-end project">
+  <meta name="author" content="Vannamma N A">
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/748a07e087.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="dot"></div>
+
+    <main> <h1>Todo List</h1>
+      <div class="parent">
+        <div class="child">
+          <h2>Add Task</h2>
+          <input
+            type="text"
+            name="userInput"
+            id="userInput"
+            placeholder="Enter Your Task"
+          />
+          <div class="buttons">
+            <button id="insert" onclick="insert()">
+              Add Task <i class="fa-solid fa-plus"></i>
+            </button>
+            <button id="reset" onclick="del()">
+              Reset Task <i class="fa-solid fa-trash-can-arrow-up"></i>
+            </button>
+            <button class="edit" onclick="edit()">
+              Edit Task <i class="fa-solid fa-pencil"></i>
+            </button>
+          </div>
+
+         
+        </div>
+        <div class="child">
+          <h2>Display Tasks</h2>
+          <ul class="itemcontainer">
+            
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; Vannamma N A 2025. All Rights Are Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
